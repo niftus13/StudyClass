@@ -18,6 +18,7 @@ public class Member {
 		//이름과 나이, 키, 책의 보유 여부를 출력해봅시다
 		System.out.printf("%d %s %f %s",name,age,height,hasBook);
 		
+		
 	}
 
 }
