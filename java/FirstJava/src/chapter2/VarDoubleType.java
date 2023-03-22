@@ -19,7 +19,7 @@ public class VarDoubleType {
 		float height = 180.5f;
 		System.out.println(height);
 		
-		double height2 = 180.5d;
+		double height2 = 180.5;
 		System.out.println(height2);
 
 	}
