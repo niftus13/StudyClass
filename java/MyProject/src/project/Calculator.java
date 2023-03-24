@@ -17,30 +17,34 @@ public class Calculator {
 		int b = in.nextInt();
 		
 		
-		plus(a,b);
-		minus(a,b);
-		multiply(a,b);
-		divide(a,b);
-		round(a);
-		area(b);
+		add(a,b);
+		sub(a,b);
+		mul(a,b);
+		div (a,b);
+		
+		
+		System.out.println("반지름 값을 입력해주세요");
+		int r = in.nextInt();
+		round(r);
+		area(r);
 		
 	}
 	//숫자 두 개를 매개변수의 인자로 전달받아 더하기 메소드를 추가합시다.
-	static int plus(int num1, int num2) {
+	static int add(int num1, int num2) {
 		int result;
 		result = num1 + num2;
 		System.out.println(result);
 		return result;
 	}
 	//숫자 두 개를 매개변수의 인자로 전달받아 빼기 메소드를 추가합시다.
-	static int minus(int num1, int num2) {
+	static int sub(int num1, int num2) {
 		int result;
 		result = num1 - num2;
 		System.out.println(result);
 		return result;
 	}
 	//숫자 두 개를 매개변수의 인자로 전달받아 곱하기 메소드를 추가합시다
-	static int multiply(int num1, int num2) {
+	static int mul(int num1, int num2) {
 		int result;
 		result = num1 * num2;
 		System.out.println(result);
@@ -49,7 +53,7 @@ public class Calculator {
 	}	
 	//숫자 두 개를 매개변수의 인자로 전달받아 나누기 메소드를 추가합시다.
 
-	static int divide(int num1, int num2) {
+	static int div(int num1, int num2) {
 		int result;
 		result = num1 / num2;
 		System.out.println(result);
@@ -57,20 +61,17 @@ public class Calculator {
 		
 	}
 	//실수 반지름 하나를 매개변수의 인자로 전달받아 원의 둘레를 구해 반환하는 메소드를 반환하는 메소드를 정의
-	static  float round(int num1) {
-		float result;
-		float pi = 3.14f;
-		
-		result = 2*num1*pi;
+	static  double round(int num1) {
+		double result;
+		result = 2*num1*Math.PI;
 		System.out.println(result);
 		return result;
 	}
 	//	⑥ 실수 반지름 하나를 매개변수의 인자로 전달받아 원의 넓이를 구해 반환하는 메소드를 반환하는 메소드를 정의
 	//	원의 둘레 : 2 x π x r , 월의 넓이 : π x r x r
-	static float area(int num1) {
-		float result;
-		float pi = 3.14f;
-		result = num1*num1*pi;
+	static double area(int num1) {
+		double result;
+		result = num1*num1*Math.PI;
 		System.out.println(result);
 		return result;
 	}
