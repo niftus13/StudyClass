@@ -5,12 +5,12 @@ package Practice_Code;
 public class Prac6 {
 
 	public static void main(String[] args) {
-		
+
 		int num = 0;
 		int sum = 0;
-		
-		while (num<100) {
-			sum+=num;
+
+		while (num < 100) {
+			sum += num;
 			num++;
 		}
 		System.out.println(sum);

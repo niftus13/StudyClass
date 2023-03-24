@@ -1,6 +1,5 @@
 package Practice_Code;
 
-
 /*문제 12.
 
 자연수 1부터 시작해서 모든 홀수와 3의 배수인 짝수를 더해 나간다.
@@ -11,27 +10,22 @@ package Practice_Code;
 public class Prac12 {
 
 	public static void main(String[] args) {
-		
-		
+
 		int num = 1;
 		int sum = 0;
-		
-		while(true) {
+
+		while (true) {
 			if (num % 2 == 1 || (num % 2 == 0 && num % 3 == 0)) {
-				sum+=num;				
+				sum += num;
 			}
-			if(sum>1000) {
+			if (sum > 1000) {
 				System.out.println("1000을 넘어선 합: " + sum);
 				System.out.println("합이 1000을 넘긴 수: " + num);
 				break;
 			}
 			num++;
 		}
-		
-
-		
 
 	}
 
 }
-
