@@ -1,6 +1,7 @@
 package chapter05.phone;
 
 public class Member {
+	SmartPhone smartPhone = new SmartPhone();
 
 	
 	//변수
@@ -8,6 +9,7 @@ public class Member {
 	String email;
 	int age;
 	String phoneNumber;
+	SmartPhone phone;
 	
 	// shift+alt+s (generate constructor)
 	public Member(String name, String email, int age, String phoneNumber) {
@@ -31,7 +33,8 @@ public class Member {
 		System.out.println("이메일 : " + email);
 		System.out.println("나이 : " + age);
 		System.out.println("전화번호 : " + phoneNumber);
+		
 	}
-	
+
 	
 }

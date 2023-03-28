@@ -17,11 +17,11 @@ public class LocalVariable {
 			System.out.println(chk);
 		}
 		//System.out.println(chk); // chk변수는 if 블록 내에서만 사용 가능
-		int i = 0;
+//		int i = 0;
 		for(int i=0; i<5;i++) {
 			System.out.println(i);
 		}
-		System.out.println(i);
+//		System.out.println(i);
 		
 		while(lv<5) {
 			int lv2 = 100;
