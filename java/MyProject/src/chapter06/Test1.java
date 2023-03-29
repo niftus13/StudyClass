@@ -19,18 +19,17 @@ public class Test1 {
 				{70,80,90}
 		};
 		
-		int sum=0;
-		float avg = 0.0f;
 		
-		
+
 		for(int i[] :student) {
+			int sum=0;
+			float avg = 0.0f;
 			for(int j : i) {
 				System.out.print(j+"\t");
 				sum+=j;
 			}
 			avg=sum/i.length;
 			System.out.println("합 = "+sum+" 평균 = "+avg+"\n");
-			sum=0;
 		}
 		
 		
