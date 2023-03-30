@@ -14,7 +14,7 @@ public class ArrayExam2 {
 		students[4] = new Student("son05",81,64,61);
 		students[5] = new Student("son06",90,80,98);
 		students[6] = new Student("son07",20,70,57);
-		students[7] = new Student("son08",70,16,25);
+		students[7] = new Student("son08",70,16	,25);
 		students[8] = new Student("son09",54,81,78);
 		students[9] = new Student("son10",91,100,70);
 
