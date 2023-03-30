@@ -1,6 +1,6 @@
 package chapter07;
 
-public class Main {
+public class PersonMain {
 
 	public static void main(String[] args) {
 
