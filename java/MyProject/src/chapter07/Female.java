@@ -8,7 +8,7 @@ public class Female extends Person{
 	//Constructor
 	public Female(String name, String idNum, boolean married) {
 		super(name, idNum);
-		married = this.married;
+		this.married = married ;
 	}
 	
 	//Check Married

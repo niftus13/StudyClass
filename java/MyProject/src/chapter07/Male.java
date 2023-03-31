@@ -5,7 +5,7 @@ public class Male extends Person{
 	
 	public Male(String name, String idNum, boolean mService) {
 		super(name, idNum);
-		mService = this.mService;
+		 this.mService = mService ;
 	}
 	
 	//Check Military Service
