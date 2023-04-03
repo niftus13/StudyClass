@@ -15,7 +15,7 @@ public class CalculatorMain {
 		System.out.println("곱하기 " + result3);
 		System.out.println("나누기 " + result4);
 		
-		
+
 	}
 
 }
