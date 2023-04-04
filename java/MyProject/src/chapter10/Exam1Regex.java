@@ -8,14 +8,14 @@ public class Exam1Regex {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("ID를 입력해주세요");
 		String inputId = scanner.nextLine();
-		
+
 		try {
 			validateInputId(inputId);
 			System.out.println(inputId);
-			
+
 		} catch (BadIdInputException e) {
 			System.out.println(e.getMessage());
-			
+
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		} finally {
@@ -28,6 +28,5 @@ public class Exam1Regex {
 			throw new BadIdInputException("영문자와 숫자로 입력해야 합니다.");
 		}
 	}
- 
 
 }

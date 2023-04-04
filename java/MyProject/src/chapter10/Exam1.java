@@ -6,11 +6,11 @@ public class Exam1 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("이름을 입력해주세요");
-		String name = sc.nextLine();
+		System.out.println("ID를 입력하세요");
+		String idInput = sc.nextLine();
 		try {
-			validateName(name);
-			System.out.println(name);
+			validateName(idInput);
+			System.out.println(idInput);
 		} catch (BadIdInputException e) {
 			System.out.println(e.getMessage());
 		} finally {
@@ -19,13 +19,13 @@ public class Exam1 {
 
 	}
 
-	private static void validateName(String name) throws BadIdInputException {
-		if (name == null || name.trim().isEmpty()) {
-			throw new BadIdInputException("ID를 정확히 입력하세요");
+	private static void validateName(String idInput) throws BadIdInputException {
+		if (idInput == null || idInput.trim().isEmpty()) {
+			throw new BadIdInputException("ID를 입력하세요");
 		}
-		for (int i = 0; i < name.length(); i++) {
-			char c = name.charAt(i);
-			if (!(c >= 'a' && c < 'z' || c >= 'A' && c <= 'Z'||c >= '0' && c < '9')) {
+		for (int i = 0; i < idInput.length(); i++) {
+			char c = idInput.charAt(i);
+			if (!(c >= 'a' && c < 'z' || c >= 'A' && c <= 'Z' || c >= '0' && c < '9')) {
 				throw new BadIdInputException("ID를 정확히 입력하세요");
 			}
 		}
