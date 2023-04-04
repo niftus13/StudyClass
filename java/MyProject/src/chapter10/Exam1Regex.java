@@ -11,7 +11,7 @@ public class Exam1Regex {
 		
 		try {
 			
-			if(!(name.matches("[a-zA-Z0-9]+"))){
+			if(name.trim().isEmpty()||!(name.matches("[a-zA-Z0-9]+"))){
 				throw new BadIdInputException("영문자와 숫자로 입력해야 합니다.");
 			}else {
 				System.out.println(name);
