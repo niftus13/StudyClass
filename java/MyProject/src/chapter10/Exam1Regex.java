@@ -5,23 +5,29 @@ import java.util.Scanner;
 public class Exam1Regex {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		System.out.println("ID를 입력해주세요");
-		String name = sc.nextLine();
+		String inputId = scanner.nextLine();
 		
 		try {
-			
-			if(name.trim().isEmpty()||!(name.matches("[a-zA-Z0-9]+"))){
-				throw new BadIdInputException("영문자와 숫자로 입력해야 합니다.");
-			}else {
-				System.out.println(name);
-			}
+			validateInputId(inputId);
+			System.out.println(inputId);
 			
 		} catch (BadIdInputException e) {
 			System.out.println(e.getMessage());
+			
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
+		} finally {
+			scanner.close();
 		}
 	}
+
+	private static void validateInputId(String inputId) throws BadIdInputException {
+		if (inputId.trim().isEmpty() || !inputId.matches("[a-zA-Z0-9]+")) {
+			throw new BadIdInputException("영문자와 숫자로 입력해야 합니다.");
+		}
+	}
+ 
 
 }
