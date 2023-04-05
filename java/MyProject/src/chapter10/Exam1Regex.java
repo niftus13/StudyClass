@@ -8,7 +8,7 @@ public class Exam1Regex {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("ID를 입력해주세요");
 		String inputId = scanner.nextLine();
-
+	
 		try {
 			validateInputId(inputId);
 			System.out.println(inputId);
