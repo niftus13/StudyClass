@@ -157,6 +157,7 @@ public class FootballPlayer1 implements Comparable<FootballPlayer1> {
 	private static void printPlayers(List<FootballPlayer1> players) {
 		for (FootballPlayer1 player : players) {
 			player.showInfo();
-		}System.out.println();
+		}
+		System.out.println();
 	}
 }
