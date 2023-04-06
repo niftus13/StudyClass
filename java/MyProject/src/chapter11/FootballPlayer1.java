@@ -125,10 +125,7 @@ public class FootballPlayer1 implements Comparable<FootballPlayer1> {
 		players.add(new FootballPlayer1("이강인", 21, "마요르카", 30));
 		players.add(new FootballPlayer1("박지성", 51, "멘유", 42));
 		players.add(new FootballPlayer1("손흥민", 7, "토트넘", 21));
-		players.add(new FootballPlayer1("안정환", 94, "전북", 42));
-		players.add(new FootballPlayer1("김민재", 38, "나폴리", 27));
-		players.add(new FootballPlayer1("이강인", 21, "마요르카", 30));
-		players.add(new FootballPlayer1("이영표", 42, "토트넘", 38));
+
 
 		return players;
 	}
