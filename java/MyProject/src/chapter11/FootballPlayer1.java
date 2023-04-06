@@ -114,7 +114,7 @@ public class FootballPlayer1 implements Comparable<FootballPlayer1> {
 
 		Set<Integer> keySet = playerMap.keySet();
 		for (Integer keyName : keySet) {
-			System.out.println(keyName + " : " + playerMap.get(keyName));
+			playerMap.get(keyName).showInfo();
 		}
 
 	}
