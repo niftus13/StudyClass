@@ -27,7 +27,6 @@ public class FootballPlayer1 implements Comparable<FootballPlayer1> {
 	}
 
 	public FootballPlayer1() {
-		// 기본 생성자
 	}
 
 	public String getName() {
@@ -86,12 +85,14 @@ public class FootballPlayer1 implements Comparable<FootballPlayer1> {
 	}
 
 	@Override
-	public int compareTo(FootballPlayer1 o) {
+	public int compareTo(FootballPlayer1 o) {	//compare == 0  => 두 값이 같다.
 		int compare = this.team.compareTo(o.getTeam());
+		
 		if (compare == 0) {
-			compare = this.name.compareTo(getName());
+			compare = this.name.compareTo(o.getName());
 			if (compare == 0) {
 				compare = this.number = o.getNumber();
+				//compare = Integer.compare(this.Number, o.getNumber
 			}
 		}
 		return compare;
@@ -124,7 +125,7 @@ public class FootballPlayer1 implements Comparable<FootballPlayer1> {
 		players.add(new FootballPlayer1("손흥민", 7, "토트넘", 21));
 		players.add(new FootballPlayer1("이강인", 21, "마요르카", 30));
 		players.add(new FootballPlayer1("박지성", 51, "멘유", 42));
-		players.add(new FootballPlayer1("손흥민", 7, "토트넘", 21));
+		players.add(new FootballPlayer1("손흥민", 17, "토트넘", 21));
 
 
 		return players;
