@@ -18,6 +18,8 @@ public class DeptListController {
 		this.listService = new DeptListService(new DeptDao());
 	}
 	
+	
+	
 	public void getDeptList() {
 		
 		// 사용자 요청 분석
