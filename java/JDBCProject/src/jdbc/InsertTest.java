@@ -38,7 +38,7 @@ public class InsertTest {
 			pstmt.setString(2,"개발팀");
 			pstmt.setString(3, "서울");
 			
-			int result = pstmt.executeUpdate();
+			int result = pstmt.executeUpdate(); 	//처리된 행의 개수 반환
 			
 			if(result >0) {
 				System.out.println("데이터가 입력되었습니다.");
@@ -52,10 +52,6 @@ public class InsertTest {
 			System.out.println("연결 실패");
 			e.printStackTrace();
 		}
-		
-		
-		
-		
 		
 
 	}
