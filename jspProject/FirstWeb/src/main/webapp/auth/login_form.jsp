@@ -14,7 +14,7 @@
 		절대경로 (서버루트 경로 기준) : /web/auth/login
 		상대경로 (현재파일기준) : login
 	  -->
-	<form action="login" method = "get">
+	<form action="login.jsp" method = "post">
 		<table>
 			<tr>
 				<td>아이디</td>
@@ -22,7 +22,7 @@
 			</tr>
 			<tr>
 				<td>비밀번호</td>
-				<td><input type="password" name="userpw"></td>
+				<td><input type="password" name="password"></td>
 			</tr>
 			<tr>
 				<td></td>
