@@ -15,7 +15,7 @@
  		   : 생략 가능 -> 생략하며녀 자기자신의 현재 URL로 보내진다
   -->
 
-	<form action="#" method="post">
+	<form  method="post">
 		<input type="text" name="num1">	
 		<input type="text" name="num2">	
 		<input type = "submit">
