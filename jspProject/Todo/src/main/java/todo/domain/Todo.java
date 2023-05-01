@@ -55,7 +55,7 @@ public class Todo {
 		return "Todo [no=" + no + ", todo=" + todo + ", duedate=" + duedate + ", complete=" + complete + "]";
 	}
 	
-	
+
 	
 	
 }

@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import todo.service.TodoListService;
+
 @WebServlet(name = "todoListController", urlPatterns = "/todo/list")
 public class TodoListController extends HttpServlet {
 
@@ -23,12 +25,22 @@ public class TodoListController extends HttpServlet {
 			HttpServletRequest request, 
 			HttpServletResponse response) 
 					throws ServletException, IOException {
+		TodoListService listService;
+
+		public TodoListController() {
+			this.listService = new TodoListService();
+		}
 		
 		System.out.println("TodoListController... doGet()...");
 		
 		// 1. 사용자 요청의 분석
 		// 2. Seveice에 요청 -> 응답 데이터 반환
+		
+		List<TodoDTO> list = listService.getList();
+		
 		// 3. 응답 데이터 request의 속성에 저장 : view로 데이터 전달
+		request.setAttribute("todoList", list);
+		
 		// 4. view 지정 -> forward
 		
 		String viewPath = "/WEB-INF/views/todo/list.jsp";
