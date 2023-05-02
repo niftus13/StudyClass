@@ -9,11 +9,17 @@ import todo.domain.TodoDTO;
 import todo.util.ConnectionProvider;
 
 public class TodoListService {
-
+	//싱글톤 
 	TodoDAO dao;
 
-	public TodoListService(TodoDAO dao) {
+	private TodoListService() {
 		this.dao = TodoDAO.getInstance();
+	}
+	
+	private static TodoListService service = new TodoListService();
+	
+	public static TodoListService getInstance() {
+		return service;
 	}
 	
 	public List<TodoDTO> getList(){
