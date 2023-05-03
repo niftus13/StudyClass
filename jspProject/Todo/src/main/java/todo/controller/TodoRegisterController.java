@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import todo.domain.RequestTodo;
 import todo.service.TodoInsertService;
@@ -24,12 +25,27 @@ public class TodoRegisterController extends HttpServlet {
 	// get
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
 		// todo 입력폼 화면 출력
 		System.out.println("TodoRegisterController.... doGet()..."); // log
-
+		
+		
+		// 회원의 로그인 확인여부를 확인 후 비 로그인 상태 -> 로그인 페이지로 이동
+		HttpSession session = request.getSession();
+		
+		// 1. session 이 새로운 세션이 아니고 세션에 로그인정보를 가지고 있다면 => 로그인상태
+		// 리디렉션 => 로그인 페이지
+		// 2. 새로 만들어진 세션 or 세션에 로그인 정보가 없을때 
+		if(session.isNew() || session.getAttribute("loginInfo") == null) {
+			System.out.println("로그인 상태가 아니다");
+			//로그인 페이지로 리디렉션
+			response.sendRedirect("/app/login");
+			
+			return ;
+		}
+		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/todo/registerForm.jsp");
 		dispatcher.forward(request, response);
+		
 	}
 
 	
@@ -40,7 +56,7 @@ public class TodoRegisterController extends HttpServlet {
 		System.out.println("TodoRegisterController... doPost()....");
 
 		// post방식의 데이터 전달 => 파라미터 한글 처리
-		request.setCharacterEncoding("UTF-8");
+//		request.setCharacterEncoding("UTF-8");
 
 		// 입력폼에서 전달한 받아서 데이터 처리
 		String todo = request.getParameter("todo");
