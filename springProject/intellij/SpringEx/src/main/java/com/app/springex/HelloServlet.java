@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.app.springex;
 
 import java.io.*;
 import javax.servlet.http.*;
