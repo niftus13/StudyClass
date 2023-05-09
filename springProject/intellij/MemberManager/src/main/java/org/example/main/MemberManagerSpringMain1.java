@@ -1,16 +1,19 @@
 package org.example.main;
 
 import org.example.assembler.Assembler;
-import org.example.dao.MemberDao;
 import org.example.domain.RegisterRequest;
 import org.example.service.ChangePasswordService;
 import org.example.service.MemberRegisterService;
+import org.springframework.context.support.GenericApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
 
 import java.util.Scanner;
 
-public class MemberManagerMain {
+public class MemberManagerSpringMain1 {
     // 조립기 : 객체를 관리
-    static Assembler assembler = new Assembler();
+
+    static GenericXmlApplicationContext ctx =
+            new GenericXmlApplicationContext("classpath:appCtx.xml");
 
     public static void main(String[] args) {
         // 사용자 메뉴 입력
@@ -55,7 +58,7 @@ public class MemberManagerMain {
             return;
         }
 
-        MemberRegisterService registerService = assembler.getRegisterService();
+        MemberRegisterService registerService = ctx.getBean("memberRegisterService",MemberRegisterService.class);
 
         RegisterRequest request = new RegisterRequest();
         // new cool@gmail 1111 1111 COOL
@@ -76,6 +79,8 @@ public class MemberManagerMain {
     }
 
 
+
+
     // 변경 메소드
     public static void changeCommand(String[] args) {
         // change cool@gmail 1111 1111
@@ -84,7 +89,8 @@ public class MemberManagerMain {
             System.out.println("change 명령 구문이 올바르지 않습니다.");
             return;
         }
-        ChangePasswordService changePasswordService = assembler.getPasswordService();
+        ChangePasswordService changePasswordService =
+                ctx.getBean("changePasswordService", ChangePasswordService.class);
 
         changePasswordService.changePassword(args[1], args[2], args[3]);
 

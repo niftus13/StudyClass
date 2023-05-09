@@ -6,32 +6,33 @@ import org.example.service.MemberRegisterService;
 
 public class Assembler {
 
-    //객체를 저장하고 있고
+    // 객체를 저장하고 있고,
     // 저장된 객체를 제공 기능
-    // 제공하는 객체는 이미 만들어 놓은 객체를 제공
+    // 제공하는 객체는 이미 만들어 놓은 객체를 제공 : singleton 효과
     // 컨테이너 : 객체를 생성, 제공, 소멸
 
-    // MemberDao, MemberRegisterService, ChangePasswordservice
+    // MemberDao, MemberRegisterService, ChangePasswordService
     private MemberDao memberDao;
     private MemberRegisterService registerService;
     private ChangePasswordService passwordService;
 
-    // 객
     public Assembler(){
-        // 객체생성, 의존주입
+        // 객체 생성, 의존 주입
         memberDao = new MemberDao();
         registerService = new MemberRegisterService(memberDao);
         passwordService = new ChangePasswordService(memberDao);
     }
-    public MemberDao getMemberDao(){
+
+    // 객체를 제공해주는 메소드
+    public MemberDao getMemberDao() {
         return memberDao;
     }
-    public MemberRegisterService getMemberRegisterService() {
+
+    public MemberRegisterService getRegisterService() {
         return registerService;
     }
 
-    public ChangePasswordService getChangePasswordService() {
+    public ChangePasswordService getPasswordService() {
         return passwordService;
     }
-
 }
