@@ -72,15 +72,19 @@ public class Member {
                 '}';
     }
 
-    //이전 비밀번호, 새로운 비밀번호 를 받아 변경처리
-    public void changePassword(String oldPassword,
-                               String newPassword) {
-        // 현재 저장되어있는 비밀번호와 전달받은 현재 비밀번호를 비교
+    // 이전(현재) 비밀번호, 새로운 비밀번호 받아서 변경처리
+    public void changePassword(
+            String oldPassword,
+            String newPassword
+    ){
+        // 현재 저장되어 있는 비밀번호화 전달받은 현재 비밀번호를 비교
         if(this.password.equals(oldPassword)){
-            this.password = oldPassword;
-        }else{
+            this.password = newPassword;
+            System.out.println("수정되었습니다.");
+        } else {
             System.out.println("현재 비밀번호와 입력하신 비밀번호가 일치하지 않습니다.");
         }
 
     }
+
 }
