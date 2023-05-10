@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b4a51bb-c8f5-4bbd-a46d-a824baff1a92" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../springProject/intellij/SpringMVC/src/main/java/com/hi/app/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springProject/intellij/SpringMVC/src/main/java/com/hi/app/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springProject/intellij/SpringMVC/src/main/java/com/hi/app/controller/SampleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springProject/intellij/SpringMVC/src/main/webapp/WEB-INF/views/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springProject/intellij/SpringMVC/src/main/webapp/WEB-INF/views/sample/sample1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springProject/intellij/SpringMVC/src/main/webapp/WEB-INF/views/sample/sample2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springProject/intellij/todolist/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springProject/intellij/todolist/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springProject/intellij/todolist/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springProject/intellij/todolist/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springProject/intellij/SpringMVC/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springProject/intellij/SpringMVC/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springProject/intellij/SpringMVC/src/main/webapp/WEB-INF/views/member/loginForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../springProject/intellij/SpringMVC/src/main/webapp/WEB-INF/views/member/loginForm.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2PauTVDfzLAdPcN5PMYZ2yeYpMO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/hi/Documents/GitHub/StudyClass/jspProject",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b4a51bb-c8f5-4bbd-a46d-a824baff1a92" name="Changes" comment="" />
+      <created>1683707521484</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683707521484</updated>
+      <workItem from="1683707522425" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
