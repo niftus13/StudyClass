@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @Log4j2
-@RequestMapping("/todo/regist")
 public class TodoRegisterController {
 
     //get : form 페이지로 응답
@@ -19,6 +18,7 @@ public class TodoRegisterController {
         return "/todo/registForm";
         // /WEB-INF/views/todo/registForm.jsp
     }
+
     //post : redirect -> "/todo/list" ,  view 필요가 없다.
     @RequestMapping(method = RequestMethod.POST)
     public String regist(){

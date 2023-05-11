@@ -5,51 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae06161c-48ef-469c-aa77-5588a385e0f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/todo/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/todo/controller/TodoListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/todo/controller/TodoReadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/todo/controller/TodoRegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/servlet-context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/registForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../jspProject/todolist/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../jspProject/todolist/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../jspProject/todolist/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../jspProject/todolist/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../jspProject/todolist/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../jspProject/todolist/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../jspProject/todolist/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../jspProject/todolist/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../jspProject/todolist/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../jspProject/todolist/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../jspProject/todolist/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../jspProject/todolist/src/main/java/com/todolist/todolist/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../jspProject/todolist/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../jspProject/todolist/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/src/main/webapp/WEB-INF/spring/root-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/src/main/webapp/WEB-INF/spring/servlet-context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/src/main/webapp/WEB-INF/views/todo/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../todolist/src/main/webapp/index.jsp" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hi/todo/controller/TodoModifyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/read.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/todo/controller/TodoReadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/todo/controller/TodoReadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hi/todo/controller/TodoRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hi/todo/controller/TodoRegisterController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683769789873</updated>
-      <workItem from="1683769790877" duration="3874000" />
+      <workItem from="1683769790877" duration="4803000" />
     </task>
     <servers />
   </component>
