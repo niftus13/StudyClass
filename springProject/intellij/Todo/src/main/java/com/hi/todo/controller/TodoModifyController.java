@@ -19,4 +19,11 @@ public class TodoModifyController {
 
         // /WEB-INF/view/todo/modifyForm.jsp
     }
+
+    // post : 데이터 받고 -> 수정 -> list로 이동
+    public String modify(){
+        log.info("POST | /todo/modify");
+
+        return "redirect:/todo/list";
+    }
 }

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TodoReadController {
 @RequestMapping("/todo/read")
     public void getRead(Model model){
-        log.info("get|post  /todo/read");
+        log.info("GET|POST  /todo/read");
         model.addAttribute("todo","Todo");
 
         // /WEB-INF/views/todo/read.jsp

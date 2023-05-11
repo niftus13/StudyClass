@@ -11,7 +11,7 @@ public class TodoListController {
 
     @RequestMapping("/todo/list")
     public void getTodoList(Model model){
-        log.info("/todo/list ");
+        log.info("...|  /todo/list ");
         // view로 결과 데이터 공유
         model.addAttribute("todoList", "리스트");
         //  /WEB-INF/views/todo/list.jsp
