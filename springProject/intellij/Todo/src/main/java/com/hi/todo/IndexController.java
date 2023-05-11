@@ -12,8 +12,6 @@ public class IndexController {
     public void getIndex(){
         log.info("/index");
         //view path : /WEB-INF/views/index.jsp
-
-
     }
 
 
