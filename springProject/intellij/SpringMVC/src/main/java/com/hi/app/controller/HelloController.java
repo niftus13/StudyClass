@@ -24,4 +24,7 @@ public class HelloController {
     }
 
 
+    public static class OrderController {
+
+    }
 }
