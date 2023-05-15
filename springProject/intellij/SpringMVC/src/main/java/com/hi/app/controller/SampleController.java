@@ -13,7 +13,7 @@ public class SampleController {
     public void getPage1(){
         log.info("/sample/sample1.... getPage1()...");
         // void 반환의 경우 view 의 경로는 url 설정 경로로 처리
-        // return "sample/sample1"; // WEB-INF/views/sample/sample1.jsp
+//         return "sample/sample1"; // WEB-INF/views/sample/sample1.jsp
     }
     @RequestMapping("/sample/sample2")
     public void getPage2(Model model){
