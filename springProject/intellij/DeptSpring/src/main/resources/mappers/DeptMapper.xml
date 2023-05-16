@@ -13,4 +13,8 @@
         select * from dept where deptno = #{deptno}
     </select>
 
+    <insert id="insertDept" parameterType="com.hi.deptspring.domain.DeptRegistRequest">
+        insert into dept (dname, loc) values(#{dname},#{loc})
+    </insert>
+
 </mapper>

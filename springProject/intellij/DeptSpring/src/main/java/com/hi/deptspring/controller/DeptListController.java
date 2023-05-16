@@ -18,6 +18,8 @@ public class DeptListController {
         this.listService = listService;
     }
 
+
+
     @RequestMapping("/dept/list")
     public void getListPage(
             Model model
