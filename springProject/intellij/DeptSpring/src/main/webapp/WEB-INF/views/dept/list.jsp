@@ -38,8 +38,8 @@
             <td>${dept.dname}</td>
             <td>${dept.loc}</td>
             <td>
-                <a href="/dept/modify?${dept.deptno}">수정</a>
-                <a href="/dept/delete?${dept.deptno}">삭제</a>
+                <a href="/dept/modify/?no=${dept.deptno}">수정</a>
+                <a href="/dept/delete/?no=${dept.deptno}">삭제</a>
             </td>
         </tr>
 
