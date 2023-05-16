@@ -30,8 +30,7 @@ public class DeptRegistController {
         log.info(registRequest);
 
         registService.registDept(registRequest);
-
-        log.info(registService.registDept(registRequest));
+        
 
         return "redirect:/dept/list";
     }
