@@ -1,0 +1,16 @@
+부서관리
+
+검색 -> 부서이름 or 부서위치 로 찾기
+
+검색 타입 : selectBox 
+키워드 
+검색 버튼
+
+where 절에 타입에 따라서 dname like "%~"
+			loc like "%~"
+if문 사용
+
+검색기능 중
+여러개 deptno 를 만족하는 결과 : list형태
+
+selectByDeptnos(List<Integer> deptnos)
