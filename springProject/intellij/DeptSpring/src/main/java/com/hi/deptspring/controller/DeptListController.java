@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @Log4j2
-
 public class DeptListController {
 
 
@@ -43,7 +42,7 @@ public class DeptListController {
         log.info(">>>>> deptSearchOption : " + deptSearchOption);
 
 //        model.addAttribute("list", listService.getList());
-        model.addAttribute("list",listService.getSearchList(searchOption));
+        model.addAttribute("list", listService.getSearchList(searchOption));
 
     }
 
