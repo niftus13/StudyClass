@@ -13,8 +13,9 @@
 
 
     <insert id="insertBoard" parameterType="com.hi.board.domain.RequestRegBoard">
-
-        insert into tbl_board (title, content, writer) values (#{title},#{content},#{writer});
+        <!--file = 파일이름 저장하는 문자열-->
+        insert into tbl_board (title, content, writer, file)
+        values (#{title},#{content},#{writer},#{filename});
     </insert>
 
 

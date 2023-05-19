@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+
 @Controller
 @Log4j2
 @RequestMapping("/board/write")
@@ -23,12 +25,13 @@ public class BoardWriteController {
 
     @PostMapping
     public String write(
-            RequestRegBoard board
+            RequestRegBoard board,
+            HttpServletRequest request
     ) {
         log.info("POST /board/write");
         log.info(board);
 
-        int service = writeService.writeBoard(board);
+        int service = writeService.writeBoard(board, request);
 
         log.info("writeService "+ (service!=0 ? "PASS" : "FAILED"));
 
