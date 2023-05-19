@@ -27,6 +27,7 @@ public class BoardListPage {
         this.pageNum = pageNum;
         this.list = list;
         this.totalCount = totalCount;
+        calPageInfo();
     }
     private void calPageInfo(){
         // 끝번호
