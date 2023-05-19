@@ -6,6 +6,14 @@
 <!--namespace 속성 설정은 필수 -> mapper interface 의 풀네임 -->
 <mapper namespace="com.hi.board.mapper.BoardMapper">
 <!--select-->
+    <select id="selectList" resultType="com.hi.board.domain.BoardDTO">
+        SELECT * FROM tbl_board order by #{bno} desc limit #{param1},#{param2};
+    </select>
+
+    <select id="selectTotalCount" resultType="int">
+        select count(*) from tbl_board;
+    </select>
+
     <select id="selectAll" resultType="com.hi.board.domain.BoardDTO">
         select * from tbl_board
     </select>
@@ -24,7 +32,7 @@
     <!--update-->
     <update id="updateBoard" parameterType="com.hi.board.domain.RequestModifyRequest">
         update tbl_board
-        set title=#{title}, content=#{content}, writer=#{writer},file =#{filename}
+        set title=#{title}, content=#{content}, writer=#{writer},file =#{filename}, updatedate = now()
         where bno = #{bno};
     </update>
 

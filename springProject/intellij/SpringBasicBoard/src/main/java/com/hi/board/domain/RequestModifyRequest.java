@@ -16,5 +16,4 @@ public class RequestModifyRequest {
     private String oldfile;
     private MultipartFile file;
     private String filename;
-
 }

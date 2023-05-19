@@ -44,7 +44,7 @@ public class BoardModifyController {
         // 사용자가 입력한 BoardDTO service 전달 -> update
         modifyService.modifyBoardDTO(modifyRequest,request);
 
-        return "redirect:/board/list";
+        return "redirect:/board/read?bno="+modifyRequest.getBno();
     }
 
 }
