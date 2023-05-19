@@ -42,6 +42,7 @@ public class BoardWriteService {
             }
         }
         // mapper.insert
+
         return boardMapper.insertBoard(board);
         
     }

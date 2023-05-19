@@ -26,8 +26,13 @@ public class ConnectionTest {
     @Autowired(required = false)
     private BoardMapper boardMapper;
 
-
-
+@Test
+public void selectByBnoTest(){
+    BoardDTO board = boardMapper.selectByBno(1);
+    log.info(board);
+    board = boardMapper.selectByBno(4);
+    log.info(board);
+}
 
 
     @Test
