@@ -19,6 +19,8 @@
 <body>
 <h1>게시글 수정</h1>
 <hr>
+<
+<hr>
 <form method="post" enctype="multipart/form-data">
     <input type="hidden" name="bno" value="${board.bno}">
     <%-- 새로운 파일을 업로드 할 수 있다

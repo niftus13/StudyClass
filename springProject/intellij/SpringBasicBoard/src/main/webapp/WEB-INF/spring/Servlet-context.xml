@@ -26,5 +26,13 @@
     </bean>
 
     <mvc:resources mapping="/uploadfile/**" location="/uploadfile/"/>
+    
+    <!--회원 로그인 체크 인터셉터-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/board/**"/>
+            <bean class="com.hi.board.intercepter.AuthCheckInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
 </beans>

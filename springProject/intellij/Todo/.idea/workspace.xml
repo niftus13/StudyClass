@@ -5,18 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae06161c-48ef-469c-aa77-5588a385e0f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../SpringMVC/src/main/java/com/hi/app/controller/CookieController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMVC/src/main/java/com/hi/app/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMVC/src/main/java/com/hi/app/domain/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMVC/src/main/java/com/hi/app/domain/OrderCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMVC/src/main/java/com/hi/app/domain/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMVC/src/main/webapp/WEB-INF/views/cookie/make.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMVC/src/main/webapp/WEB-INF/views/cookie/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMVC/src/main/webapp/WEB-INF/views/order/order.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringMVC/src/main/webapp/WEB-INF/views/order/orderForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC/src/main/java/com/hi/app/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMVC/src/main/java/com/hi/app/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringMVC/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/controller/member/MemberLoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/controller/member/MemberLogoutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/controller/member/MemberRegistController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/domain/BoardSearchOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/domain/PageOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/domain/member/MemberDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/domain/member/MemberRegistRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/intercepter/AuthCheckInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/mapper/MemberMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/service/member/MemberLoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/service/member/MemberRegistService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/resources/mappers/memberMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/webapp/WEB-INF/sql/member.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/webapp/WEB-INF/views/member/loginForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/webapp/WEB-INF/views/member/regist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/controller/BoardListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/controller/BoardListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/domain/BoardListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/domain/BoardListPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/mapper/BoardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/mapper/BoardMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/service/BoardListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/java/com/hi/board/service/BoardListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBasicBoard/src/main/resources/mappers/boardMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/resources/mappers/boardMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBasicBoard/src/main/webapp/WEB-INF/spring/Servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/webapp/WEB-INF/spring/Servlet-context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBasicBoard/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBasicBoard/src/main/webapp/WEB-INF/views/board/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/webapp/WEB-INF/views/board/modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBasicBoard/src/main/webapp/WEB-INF/views/board/read.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/webapp/WEB-INF/views/board/read.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBasicBoard/src/main/webapp/WEB-INF/views/board/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBasicBoard/src/main/webapp/WEB-INF/views/board/write.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,6 +208,8 @@
       <workItem from="1683788241402" duration="26000" />
       <workItem from="1683852605670" duration="15015000" />
       <workItem from="1683874005922" duration="1218000" />
+      <workItem from="1684739090111" duration="8000" />
+      <workItem from="1684746287413" duration="22000" />
     </task>
     <servers />
   </component>
