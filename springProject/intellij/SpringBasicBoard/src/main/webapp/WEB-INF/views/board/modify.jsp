@@ -35,10 +35,6 @@
             <td>내용</td>
             <td><textarea name="content" cols="40" rows="4"  required>${board.content}</textarea></td>
         </tr>
-        <tr>
-            <td>작성자</td>
-            <td><input type="text" name="writer" value="${board.writer}" required></td>
-        </tr>
         <c:if test="${board.file ne null}">
         <tr>
             <td>첨부된 파일</td>

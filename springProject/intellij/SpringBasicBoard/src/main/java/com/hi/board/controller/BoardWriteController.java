@@ -33,8 +33,6 @@ public class BoardWriteController {
 
         int service = writeService.writeBoard(board, request);
 
-        log.info("writeService "+ (service!=0 ? "PASS" : "FAILED"));
-
         return "redirect:/board/list";
     }
 
