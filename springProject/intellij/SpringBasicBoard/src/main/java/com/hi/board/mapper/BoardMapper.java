@@ -9,6 +9,7 @@ import java.util.List;
 public interface BoardMapper {
 
 
+
 //    select
     List<BoardDTO> selectList(PageOption pageOption);
     // selectList(0,5)  #{param1} => 0, #{param2} => 5

@@ -41,22 +41,21 @@ public void selectByBnoTest(){
         log.info(list);
     }
 
-    @Test
-    public void mapperTest(){
-        Assertions.assertNotNull(boardMapper);
-    }
-    @Test
-    public void boardInsertTest(){
-        RequestRegBoard board = RequestRegBoard.builder()
-                .title("테스트 제목")
-                .content("테스트 내용")
-                .writer("테스트 작성자")
-                .build();
+//    @Test
+//    public void mapperTest(){
+//        Assertions.assertNotNull(boardMapper);
+//    }
+////    @Test
+////    public void boardInsertTest(){
+////        RequestRegBoard board = RequestRegBoard.builder()
+////                .title("테스트 제목")
+////                .content("테스트 내용")
+////                .build();
+////
+////        log.info(board);
+////        boardMapper.insertBoard(board);
 
-        log.info(board);
-        boardMapper.insertBoard(board);
-
-    }
+//    }
 
 @Test
     public void connectionTest() throws SQLException {

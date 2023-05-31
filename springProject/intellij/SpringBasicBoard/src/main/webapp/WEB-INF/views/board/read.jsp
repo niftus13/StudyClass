@@ -15,6 +15,59 @@
             padding: 10px 20px;
         }
     </STYLE>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#replyRegForm').submit(function(){
+
+                if($('#reply').val().trim().length < 1){
+                    alert('댓글 내용을 입력해주세요')
+                    return false;
+                }
+                const payload = {
+                    bno : $('#bno').val(),
+                    memIdx : $('#mIdx').val(),
+                    reply : $('#reply').val()
+                }
+                $.ajax({
+                    url : 'reply', // /board/read , / board/reply
+                    type : 'post',
+                    contentType : 'application/json',
+                    data : JSON.stringify(payload),
+                    dataType : 'json',
+                    success : function (data){
+                        // console.log(data)
+
+                        // 화면에 동적 HTMl 생성 추가
+
+                        let html =
+                        html+= <td>${data.memIdx} </td>
+                        html+= <td>${data.reply}</td>
+                        html+= <td>${data.replyDate}</td>
+                        html+= <td><a href = "javascript : del(${date.rno})">삭제</a></td>;
+
+
+                        const newTR = $('<tr></tr>').attr('tr-index', data.rno).html(html);
+                        // List 영역에 tr 을 추가
+                        $('#replyList').append(newTR)
+
+                        $('#reply').val('')
+                    }
+                })
+
+                return false;
+            })
+
+
+        })
+
+        function delTr(index){
+            $('tr[tr-index ="' +index+'"]').remove()
+        }
+
+    </script>
 </head>
 <body>
 <h1>게시글 보기</h1>
@@ -55,6 +108,32 @@ ${loginInfo}
         <td>${article.updatedate}</td>
     </tr>
 </table>
+<hr>
+
+<div id="replyArea">
+
+    <h3>댓글</h3>
+    <hr>
+    <div>
+        <form id="replyRegForm">
+            <input type="text"  id="bno" value="${article.bno}"><br>
+            <input type="text" id="mIdx" value="${loginInfo.idx}"><br>
+            <input type="text" id="reply" required><br>
+            <input type="submit">
+        </form>
+    </div>
+    <%--댓글 리스트--%>
+    <table>
+        <tbody id="replyList">
+
+        </tbody>
+    </table>
+
+</div>
+
+
+
+
 <a href="/board/list">LIST</a>
 <c:if test="${loginInfo.idx eq article.memidx}">
     <a href="/board/modify?bno=${article.bno}">수정</a>
