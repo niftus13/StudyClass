@@ -1,0 +1,35 @@
+bootex> code .
+
+view command platte 
+
+b3
+
+build.gradle file => 내용추가 
+
+1.build.gradle 파일에 라이브러리 2개 추가 
+
+ implementation 'jstl:jstl:1.2'
+
+ implementation "org.apache.tomcat.embed:tomcat-embed-jasper"
+
+
+
+간혹 라이브러리 변경 인식못할때 class path clean 
+
+java clean java language server workspace => 
+
+src -main -resource -application properties  
+
+spring.mvc.view.prefix=/WEB-INF/
+spring.mvc.view.suffix=.jsp
+
+
+controller-> HelloController @Controller @Log4j2
+
+@GetMapping("/hello")
+public void hello(){
+log.info("hello.....")
+}
+
+main => webapp => WEB-INF => hello.jsp (html) 
+<h1>Hello JSP</h1>
